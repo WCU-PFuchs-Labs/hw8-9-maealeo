@@ -22,16 +22,17 @@ public class TestGeneration {
 
         System.out.print("Best fitness: "); 
         gen.printBestFitness();
-
-        System.out.println("Top Ten Fitness Values: "); 
-        ArrayList<GPTree> topTen = gen.getTopTen(); 
-        for(int i = 0; i < topTen.size(); i++){
+        System.out.println("Top Ten Fitness Values:");
+        // This prints the list on a new line:
+        ArrayList<GPTree> topTen = gen.getTopTen();
+        for (int i = 0; i < topTen.size(); i++) {
             System.out.printf("%.2f", topTen.get(i).getFitness());
             if (i != topTen.size() - 1) {
-                System.out.print(", "); 
+                System.out.print(", ");
             }
         }
-        System.out.println(); 
+        System.out.println(); // ensures output ends with a newline 
+ 
 
     }
 }
