@@ -48,8 +48,8 @@ public class Generation {
         Random rand = new Random();
         GPTree[] nextGen = new GPTree[size];
         for (int i = 0; i < size; i += 2) {
-            GPTree parent1 = trees[rand.nextInt(size/2)].clone();
-            GPTree parent2 = trees[rand.nextInt(size/2)].clone();
+            GPTree parent1 = (GPTree) trees[rand.nextInt(size/2)].clone();
+            GPTree parent2 = (GPTree) trees[rand.nextInt(size/2)].clone();
             parent1.crossover(parent2, rand);
             nextGen[i] = parent1;
             if(i + 1 < size){
