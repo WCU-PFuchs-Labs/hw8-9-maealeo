@@ -153,6 +153,7 @@ public class Node implements Cloneable{
         }catch(CloneNotSupportedException e) {
         return null; 
     }
+    }
 
     @Override
     public String toString(){
