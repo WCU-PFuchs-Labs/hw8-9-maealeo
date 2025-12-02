@@ -59,10 +59,5 @@ public class Generation {
         trees = nextGen;
     }
 
-    @Override 
-    public GPTree clone() {
-        GPTree copy = (GPTree)super.clone(); 
-        
-        return copy; 
-    }
+
 }
