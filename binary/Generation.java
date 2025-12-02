@@ -62,7 +62,7 @@ public class Generation {
     @Override 
     public GPTree clone() {
         GPTree copy = (GPTree)super.clone(); 
-        copy.root = root.clone(); 
+        
         return copy; 
     }
 }
